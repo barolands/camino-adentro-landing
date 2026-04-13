@@ -26,7 +26,7 @@ export const services: ServiceItem[] = [
     title: "Compassionate Inquiry",
     mode: "Online",
     description:
-      "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve.",
+      "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve.\n\nUn acercamiento al trauma de manera amorosa, segura y a tu ritmo.",
     benefits: ["Conciencia emocional", "Sanación profunda", "Autoconocimiento"],
   },
   {

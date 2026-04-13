@@ -34,7 +34,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground font-body font-light leading-relaxed mb-5">{s.description}</p>
+              <p className="text-muted-foreground font-body font-light leading-relaxed mb-5 whitespace-pre-line">{s.description}</p>
 
               <ul className="flex flex-wrap gap-2 mb-6">
                 {s.benefits.map((b) => (

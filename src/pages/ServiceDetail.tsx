@@ -45,7 +45,7 @@ const ServiceDetail = () => {
             </div>
           </div>
 
-          <p className="text-muted-foreground font-body font-light leading-relaxed text-lg mb-10">{service.description}</p>
+          <p className="text-muted-foreground font-body font-light leading-relaxed text-lg mb-10 whitespace-pre-line">{service.description}</p>
 
           <div className="mb-10">
             <h2 className="text-sm font-body uppercase tracking-[0.2em] text-foreground mb-4">Enfoque</h2>
