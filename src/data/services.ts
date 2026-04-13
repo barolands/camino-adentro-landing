@@ -18,7 +18,12 @@ export const services: ServiceItem[] = [
     mode: "Presencial",
     description:
       "Restaurá el equilibrio energético de tu cuerpo a través de técnicas milenarias que promueven el bienestar físico y emocional.",
-    benefits: ["Equilibrio energético", "Bienestar físico", "Armonización integral"],
+    benefits: [
+      "Equilibrio energético",
+      "Bienestar físico",
+      "Armonización integral",
+      "Alivio del dolor",
+    ],
   },
   {
     slug: "compassionate-inquiry",
