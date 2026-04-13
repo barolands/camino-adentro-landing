@@ -3,6 +3,8 @@ import { useFadeIn } from "@/hooks/useFadeIn";
 import { Button } from "../ui/button";
 import { services } from "@/data/services";
 
+const SLUGS_WITH_VER_MAS = new Set(["medicina-tradicional-china", "compassionate-inquiry"]);
+
 const Services = () => {
   const ref = useFadeIn();
 
@@ -43,9 +45,11 @@ const Services = () => {
               </ul>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="hero" className="rounded-full" size="sm" asChild>
-                  <Link to={`/servicios/${s.slug}`}>Ver más</Link>
-                </Button>
+                {SLUGS_WITH_VER_MAS.has(s.slug) && (
+                  <Button variant="hero" className="rounded-full" size="sm" asChild>
+                    <Link to={`/servicios/${s.slug}`}>Ver más</Link>
+                  </Button>
+                )}
                 <Button variant="outline" className="rounded-full" size="sm" asChild>
                   <a
                     href="https://wa.me/5493511234567?text=Hola!%20Quiero%20consultar%20por%20"
