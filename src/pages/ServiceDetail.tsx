@@ -1,15 +1,34 @@
+import { useEffect } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
-import { getServiceBySlug } from "@/data/services";
+import { getServiceBySlug, getServiceLandingUrl } from "@/data/services";
 
 const WA_BASE = "https://wa.me/5491168344165?text=";
 
+const STATIC_LANDING_SLUGS = new Set(["medicina-tradicional-china", "compassionate-inquiry"]);
+
+function RedirectToStaticLanding({ path }: { path: string }) {
+  useEffect(() => {
+    window.location.replace(path);
+  }, [path]);
+  return (
+    <div className="min-h-screen flex items-center justify-center font-body text-muted-foreground">
+      Cargando…
+    </div>
+  );
+}
+
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  if (slug && STATIC_LANDING_SLUGS.has(slug)) {
+    return <RedirectToStaticLanding path={getServiceLandingUrl(slug)} />;
+  }
+
   const service = getServiceBySlug(slug);
 
   if (!service) {

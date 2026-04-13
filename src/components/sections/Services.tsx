@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { Button } from "../ui/button";
-import { services } from "@/data/services";
+import { getServiceLandingUrl, services } from "@/data/services";
 
 const SLUGS_WITH_VER_MAS = new Set(["medicina-tradicional-china", "compassionate-inquiry"]);
 
@@ -19,7 +18,11 @@ const Services = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {services.map((s) => (
+          {services.map((s) => {
+            const verMasHref = getServiceLandingUrl(s.slug);
+            const verMasIsExternal = /^https?:\/\//i.test(verMasHref);
+
+            return (
             <div
               key={s.slug}
               className="group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/20"
@@ -47,7 +50,12 @@ const Services = () => {
               <div className="flex flex-wrap gap-3">
                 {SLUGS_WITH_VER_MAS.has(s.slug) && (
                   <Button variant="hero" className="rounded-full" size="sm" asChild>
-                    <Link to={`/servicios/${s.slug}`}>Ver más</Link>
+                    <a
+                      href={verMasHref}
+                      {...(verMasIsExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                      Ver más
+                    </a>
                   </Button>
                 )}
                 <Button variant="outline" className="rounded-full" size="sm" asChild>
@@ -61,7 +69,8 @@ const Services = () => {
                 </Button>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

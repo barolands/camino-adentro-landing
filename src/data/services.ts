@@ -58,3 +58,15 @@ export function getServiceBySlug(slug: string | undefined): ServiceItem | undefi
   if (!slug) return undefined;
   return services.find((s) => s.slug === slug);
 }
+
+/** Si completás una URL (https://…), "Ver más" y /servicios/:slug abren ese enlace. Si queda vacío, se usa /landings/:slug/ en este sitio. */
+export const externalLandingUrls: Partial<Record<string, string>> = {
+  "medicina-tradicional-china": "",
+  "compassionate-inquiry": "https://daniela-barocela.github.io/web/",
+};
+
+export function getServiceLandingUrl(slug: string): string {
+  const raw = externalLandingUrls[slug]?.trim();
+  if (raw) return raw;
+  return `/landings/${slug}/`;
+}
