@@ -1,5 +1,4 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
-import { User } from "lucide-react";
 
 const About = () => {
   const ref = useFadeIn();
@@ -12,11 +11,13 @@ const About = () => {
           Un espacio para volver a vos
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-          {/* Foto placeholder */}
           <div className="flex-shrink-0">
-            <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-sand/50 border-2 border-sand flex items-center justify-center overflow-hidden">
-              {/* Reemplazá este bloque con: <img src="/tu-foto.jpg" alt="Foto" className="w-full h-full object-cover" /> */}
-              <User className="w-16 h-16 text-muted-foreground/40" />
+            <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-sand/50 border-2 border-sand overflow-hidden">
+              <img
+                src="/sobre-mi.png"
+                alt="Retrato de una mujer sonriente con cabello largo oscuro, al aire libre con árboles y flores naranjas."
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
           {/* Texto */}
