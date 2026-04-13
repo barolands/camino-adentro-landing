@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Hola! Soy ${name}. ${message}`;
-    window.open(`https://wa.me/5493511234567?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/5491168344165?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   return (
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
 
             <Button variant="hero" size="lg" className="w-fit mt-2" asChild>
-              <a href="https://wa.me/5493511234567" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5491168344165" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-4 w-4 mr-2" />
                 Escribime por WhatsApp
               </a>

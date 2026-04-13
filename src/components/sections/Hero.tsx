@@ -23,7 +23,7 @@ const Hero = () => (
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
         <Button variant="hero" size="lg" asChild>
-          <a href="https://wa.me/5493511234567?text=Hola!%20Quiero%20reservar%20una%20sesión" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5491168344165?text=Hola!%20Quiero%20reservar%20una%20sesión" target="_blank" rel="noopener noreferrer">
             Reservar sesión
           </a>
         </Button>

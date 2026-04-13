@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { getServiceBySlug } from "@/data/services";
 
-const WA_BASE = "https://wa.me/5493511234567?text=";
+const WA_BASE = "https://wa.me/5491168344165?text=";
 
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
