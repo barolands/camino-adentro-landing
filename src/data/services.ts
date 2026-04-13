@@ -27,7 +27,7 @@ export const services: ServiceItem[] = [
     mode: "Online",
     description:
       "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve.\n\nUn acercamiento al trauma de manera amorosa, segura y a tu ritmo.",
-    benefits: ["Conciencia emocional", "Sanación profunda", "Autoconocimiento"],
+    benefits: ["Conciencia emocional", "Sanación profunda", "Autoconocimiento", "Experiencia somática"],
   },
   {
     slug: "terapia-floral-bach",
