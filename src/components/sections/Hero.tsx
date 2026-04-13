@@ -14,7 +14,7 @@ const Hero = () => (
       </h1>
 
       <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
-        El camino hacia adentro empieza acá
+        El camino empieza adentro
       </p>
 
       <p className="text-base md:text-lg font-body font-light text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.45s" }}>
