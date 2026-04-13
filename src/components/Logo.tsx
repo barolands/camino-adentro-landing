@@ -8,6 +8,14 @@ const Logo = ({ className = "", size = 64 }: { className?: string; size?: number
     className={className}
   >
     {/* Spiral */}
+    <defs>
+      <linearGradient id="spiralGold" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="currentColor" />
+        <stop offset="40%" stopColor="#C9A96E" />
+        <stop offset="70%" stopColor="#D4B87A" />
+        <stop offset="100%" stopColor="currentColor" />
+      </linearGradient>
+    </defs>
     <path
       d="M50 20
          C65 20, 78 33, 78 50
@@ -18,7 +26,7 @@ const Logo = ({ className = "", size = 64 }: { className?: string; size?: number
          C62 55, 57 59, 52 59
          C47 59, 44 55, 44 51
          C44 47, 47 45, 50 45"
-      stroke="currentColor"
+      stroke="url(#spiralGold)"
       strokeWidth="1.5"
       strokeLinecap="round"
       fill="none"
