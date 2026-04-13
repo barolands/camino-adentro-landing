@@ -1,37 +1,7 @@
+import { Link } from "react-router-dom";
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { Button } from "../ui/button";
-import { Flower2, Heart, Droplets, Hand } from "lucide-react";
-
-const services = [
-  {
-    icon: Flower2,
-    title: "Medicina Tradicional China",
-    mode: "Presencial",
-    description: "Restaurá el equilibrio energético de tu cuerpo a través de técnicas milenarias que promueven el bienestar físico y emocional.",
-    benefits: ["Equilibrio energético", "Bienestar físico", "Armonización integral"],
-  },
-  {
-    icon: Heart,
-    title: "Compassionate Inquiry",
-    mode: "Online",
-    description: "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve.",
-    benefits: ["Conciencia emocional", "Sanación profunda", "Autoconocimiento"],
-  },
-  {
-    icon: Droplets,
-    title: "Terapia Floral Bach",
-    mode: "Online",
-    description: "Trabajo emocional sutil y poderoso a través de esencias florales, para acompañar procesos de cambio y transformación interior.",
-    benefits: ["Equilibrio emocional", "Acompañamiento suave", "Transformación interior"],
-  },
-  {
-    icon: Hand,
-    title: "Masajes Terapéuticos",
-    mode: "Presencial",
-    description: "Relajación profunda, alivio de tensiones y una invitación a reconectar con tu cuerpo desde la calma y la presencia.",
-    benefits: ["Relajación profunda", "Alivio de tensiones", "Conexión corporal"],
-  },
-];
+import { services } from "@/data/services";
 
 const Services = () => {
   const ref = useFadeIn();
@@ -49,7 +19,7 @@ const Services = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
             <div
-              key={s.title}
+              key={s.slug}
               className="group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/20"
             >
               <div className="flex items-start gap-4 mb-4">
@@ -72,11 +42,20 @@ const Services = () => {
                 ))}
               </ul>
 
-              <Button variant="outline" className="rounded-full" size="sm" asChild>
-                <a href="https://wa.me/5493511234567?text=Hola!%20Quiero%20consultar%20por%20" target="_blank" rel="noopener noreferrer">
-                  Consultar
-                </a>
-              </Button>
+              <div className="flex flex-wrap gap-3">
+                <Button variant="hero" className="rounded-full" size="sm" asChild>
+                  <Link to={`/servicios/${s.slug}`}>Ver más</Link>
+                </Button>
+                <Button variant="outline" className="rounded-full" size="sm" asChild>
+                  <a
+                    href="https://wa.me/5493511234567?text=Hola!%20Quiero%20consultar%20por%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           ))}
         </div>

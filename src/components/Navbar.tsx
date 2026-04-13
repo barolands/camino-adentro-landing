@@ -3,9 +3,9 @@ import Logo from "./Logo";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Sobre mí", href: "#sobre-mi" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Sobre mí", href: "/#sobre-mi" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <Logo size={32} className="text-primary" />
           <span className="font-heading text-lg font-light text-foreground">Camino Adentro</span>
         </a>

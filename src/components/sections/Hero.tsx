@@ -28,7 +28,7 @@ const Hero = () => (
           </a>
         </Button>
         <Button variant="outline" size="lg" className="rounded-full" asChild>
-          <a href="#servicios">Conocer más</a>
+          <a href="/#servicios">Conocer más</a>
         </Button>
       </div>
     </div>
