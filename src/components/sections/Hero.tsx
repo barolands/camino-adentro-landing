@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const Hero = () => (
   <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden section-padding text-center">
     {/* Subtle background gradient */}
-    <div className="absolute inset-0 bg-gradient-to-b from-sage-light/60 via-background to-background" />
+    <div className="absolute inset-0 bg-gradient-to-b from-sage-light/75 via-background to-background" />
 
     <div className="relative z-10 flex flex-col items-center gap-6 max-w-2xl mx-auto">
       <Logo size={80} className="text-primary animate-fade-in" />
