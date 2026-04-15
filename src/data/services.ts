@@ -68,5 +68,5 @@ export const externalLandingUrls: Partial<Record<string, string>> = {
 export function getServiceLandingUrl(slug: string): string {
   const raw = externalLandingUrls[slug]?.trim();
   if (raw) return raw;
-  return `/landings/${slug}/`;
+  return `${import.meta.env.BASE_URL}landings/${slug}/`;
 }

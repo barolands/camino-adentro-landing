@@ -14,7 +14,7 @@ const About = () => {
           <div className="flex-shrink-0">
             <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-sand/50 border-2 border-sand overflow-hidden">
               <img
-                src="/sobre-mi.png"
+                src={`${import.meta.env.BASE_URL}sobre-mi.png`}
                 alt="Retrato de una mujer sonriente con cabello largo oscuro, al aire libre con árboles y flores naranjas."
                 className="h-full w-full object-cover"
               />
