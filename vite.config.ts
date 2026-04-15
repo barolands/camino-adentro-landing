@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/camino-adentro-landing/" : "/",
+  // Custom domain in GitHub Pages serves from root, not project subpath
+  base: "/",
   server: {
     host: "::",
     port: 8080,
