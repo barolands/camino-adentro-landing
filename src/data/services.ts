@@ -61,7 +61,7 @@ export function getServiceBySlug(slug: string | undefined): ServiceItem | undefi
 
 /** Si completás una URL (https://…), "Ver más" y /servicios/:slug abren ese enlace. Si queda vacío, se usa /landings/:slug/ en este sitio. */
 export const externalLandingUrls: Partial<Record<string, string>> = {
-  "medicina-tradicional-china": "",
+  "medicina-tradicional-china": "https://barolands.github.io/caminoadentro-medicinachina/",
   "compassionate-inquiry": "https://barolands.github.io/web/",
 };
 
