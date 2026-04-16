@@ -68,13 +68,17 @@ const ServiceDetail = () => {
 
           <div className="mb-10">
             <h2 className="text-sm font-body uppercase tracking-[0.2em] text-foreground mb-4">Enfoque</h2>
-            <ul className="flex flex-wrap gap-2">
-              {service.benefits.map((b) => (
-                <li key={b} className="rounded-full bg-sage-light px-4 py-2 text-sm font-body text-primary">
-                  {b}
-                </li>
-              ))}
-            </ul>
+            {service.idealFor ? (
+              <p className="text-muted-foreground font-body font-light leading-relaxed">{service.idealFor}</p>
+            ) : (
+              <ul className="flex flex-wrap gap-2">
+                {service.benefits.map((b) => (
+                  <li key={b} className="rounded-full bg-sage-light px-4 py-2 text-sm font-body text-primary">
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
 
           <Button variant="hero" size="lg" className="rounded-full" asChild>

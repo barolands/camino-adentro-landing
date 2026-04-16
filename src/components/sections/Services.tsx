@@ -39,13 +39,17 @@ const Services = () => {
 
               <p className="text-muted-foreground font-body font-light leading-relaxed mb-5 whitespace-pre-line">{s.description}</p>
 
-              <ul className="flex flex-wrap gap-2 mb-6">
-                {s.benefits.map((b) => (
-                  <li key={b} className="rounded-full bg-sage-light px-3 py-1 text-xs font-body text-primary">
-                    {b}
-                  </li>
-                ))}
-              </ul>
+              {s.idealFor ? (
+                <p className="mb-6 text-sm font-body font-light leading-relaxed text-muted-foreground">{s.idealFor}</p>
+              ) : (
+                <ul className="flex flex-wrap gap-2 mb-6">
+                  {s.benefits.map((b) => (
+                    <li key={b} className="rounded-full bg-sage-light px-3 py-1 text-xs font-body text-primary">
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <div className="flex flex-wrap gap-3">
                 {SLUGS_WITH_VER_MAS.has(s.slug) && (
