@@ -22,7 +22,7 @@ export const services: ServiceItem[] = [
       "Restaurá el equilibrio energético de tu cuerpo a través de técnicas milenarias que promueven el bienestar físico y emocional.",
     benefits: [],
     idealFor:
-      "Ideal para: alivio del dolor, trastornos digestivos, lumbalgias, cefaleas, bruxismo, estrés, ansiedad, insomnio, y mucho más.",
+      "Ideal para: alivio del dolor, trastornos digestivos, lumbalgias, cefaleas, bruxismo, estrés, ansiedad, insomnio, infertilidad, dolores menstruales, y mucho más.",
   },
   {
     slug: "compassionate-inquiry",
