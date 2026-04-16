@@ -31,6 +31,9 @@ const About = () => {
             <p>
               No se trata de tener respuestas, sino de crear un espacio seguro para que puedas escucharte, sentirte y encontrar tu propia dirección.
             </p>
+            <p className="pt-8 font-heading text-2xl md:text-3xl font-light italic text-foreground text-center md:text-left">
+              Daniela
+            </p>
           </div>
         </div>
       </div>
