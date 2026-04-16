@@ -8,7 +8,7 @@ export type ServiceItem = {
   mode: string;
   description: string;
   benefits: string[];
-  /** Si está definido, sustituye la lista de etiquetas por este texto (p. ej. “Ideal para: …”). */
+  /** Si está definido, sustituye la lista de etiquetas por este texto (p. ej. “Ideal para: …”, “Ideal si: …”). */
   idealFor?: string;
 };
 
@@ -30,8 +30,10 @@ export const services: ServiceItem[] = [
     title: "Compassionate Inquiry",
     mode: "Online",
     description:
-      "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve.\n\nUn acercamiento al trauma de manera amorosa, segura y a tu ritmo.",
-    benefits: ["Conciencia emocional", "Sanación profunda", "Autoconocimiento", "Experiencia somática"],
+      "Un acompañamiento emocional profundo basado en la conciencia, para explorar las raíces de tus patrones y liberar lo que ya no te sirve. Un acercamiento al trauma de manera amorosa, segura y a tu ritmo.",
+    benefits: [],
+    idealFor:
+      "Ideal si: buscas sanar heridas muy profundas, repetición de patrones, reacciones repetitivas, elaboración e integración del trauma, conectar con la experiencia somática (mente, cuerpo, emoción), adicciones.",
   },
   {
     slug: "terapia-floral-bach",
