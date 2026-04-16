@@ -28,7 +28,7 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <p className="text-sm font-body uppercase tracking-[0.25em] text-muted-foreground mb-4">Testimonios</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-light text-foreground">
-            Palabras que inspiran
+            Quienes pasaron por el espacio dicen...
           </h2>
         </div>
 
