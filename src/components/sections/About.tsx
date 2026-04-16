@@ -10,8 +10,8 @@ const About = () => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-light mb-12 text-foreground text-center">
           Un espacio para volver a vos
         </h2>
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-          <div className="flex-shrink-0">
+        <div className="flex flex-col md:flex-row items-center md:items-stretch gap-10 md:gap-14">
+          <div className="flex flex-shrink-0 justify-center md:justify-start">
             <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-sand/50 border-2 border-sand overflow-hidden">
               <img
                 src={`${import.meta.env.BASE_URL}sobre-mi.png`}
@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
           {/* Texto */}
-          <div className="space-y-5 text-base md:text-lg font-body font-light leading-relaxed text-muted-foreground text-center md:text-left">
+          <div className="flex flex-1 flex-col space-y-5 text-base md:text-lg font-body font-light leading-relaxed text-muted-foreground text-center md:text-left">
             <p>
               Creo profundamente en la capacidad de cada persona para sanar y transformarse. Mi trabajo es acompañarte en ese proceso, con respeto, escucha y presencia.
             </p>
@@ -31,7 +31,7 @@ const About = () => {
             <p>
               No se trata de tener respuestas, sino de crear un espacio seguro para que puedas escucharte, sentirte y encontrar tu propia dirección.
             </p>
-            <p className="pt-8 font-heading text-2xl md:text-3xl font-light italic text-foreground text-center md:text-left">
+            <p className="mt-auto pt-8 font-heading text-2xl md:text-3xl font-light italic text-foreground text-right">
               Daniela
             </p>
           </div>
