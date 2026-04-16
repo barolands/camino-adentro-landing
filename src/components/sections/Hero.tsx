@@ -14,11 +14,10 @@ const Hero = () => (
       </h1>
 
       <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
-        El camino empieza adentro
-      </p>
+        Terapias integrales para volver a tu centro
 
       <p className="text-base md:text-lg font-body font-light text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.45s" }}>
-        Acompañamiento terapéutico integral para reconectar con tu cuerpo, tus emociones y tu bienestar.
+        Medicina tradicional china- Masajes terapéuticos- Terapia floral- Acompañamiento psico-emocional con Compassionate Inquiry
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
