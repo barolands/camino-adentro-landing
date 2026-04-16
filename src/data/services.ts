@@ -42,7 +42,9 @@ export const services: ServiceItem[] = [
     mode: "Online",
     description:
       "Trabajo emocional sutil y poderoso a través de esencias florales, para acompañar procesos de cambio y transformación interior.",
-    benefits: ["Equilibrio emocional", "Acompañamiento suave", "Transformación interior"],
+    benefits: [],
+    idealFor:
+      "Ideal para: ansiedad, estrés, tristeza profunda, desánimo, falta de iniciativa, miedos, falta de confianza personal, shock, sobrepensamiento, adaptación a cambios, y más.",
   },
   {
     slug: "masajes-terapeuticos",
