@@ -5,9 +5,14 @@ const Footer = () => (
   <footer className="section-padding bg-foreground py-12">
     <div className="mx-auto max-w-6xl space-y-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-2">
-          <Logo size={28} className="text-primary-foreground/70" />
-          <span className="font-heading text-sm font-light text-primary-foreground/70">Camino Adentro</span>
+        <div className="flex items-start gap-2">
+          <Logo size={28} className="text-primary-foreground/70 shrink-0 mt-0.5" />
+          <div className="flex flex-col gap-1">
+            <span className="font-heading text-sm font-light text-primary-foreground/70">Camino Adentro</span>
+            <span className="font-heading text-xs font-light text-primary-foreground/70">
+              Modalidad presencial + online
+            </span>
+          </div>
         </div>
         <p className="font-body text-xs text-primary-foreground/40">
           © {new Date().getFullYear()} Camino Adentro · Córdoba, Argentina
