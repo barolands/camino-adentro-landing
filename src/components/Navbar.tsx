@@ -3,8 +3,8 @@ import Logo from "./Logo";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Sobre mí", href: "/#sobre-mi" },
   { label: "Servicios", href: "/#servicios" },
+  { label: "Sobre mí", href: "/#sobre-mi" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
