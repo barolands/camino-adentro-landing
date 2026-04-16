@@ -53,7 +53,9 @@ export const services: ServiceItem[] = [
     mode: "Presencial",
     description:
       "Relajación profunda, alivio de tensiones y una invitación a reconectar con tu cuerpo desde la calma y la presencia.",
-    benefits: ["Relajación profunda", "Alivio de tensiones", "Conexión corporal"],
+    benefits: [],
+    idealFor:
+      "Ideal para: contracturas, estrés acumulado, agotamiento físico y mental, necesidad de conectar con el cuerpo y la relajación.",
   },
 ];
 
