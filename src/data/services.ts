@@ -8,7 +8,7 @@ export type ServiceItem = {
   mode: string;
   description: string;
   benefits: string[];
-  /** Si está definido, sustituye la lista de etiquetas por este texto (p. ej. “ideal para: …”). */
+  /** Si está definido, sustituye la lista de etiquetas por este texto (p. ej. “Ideal para: …”). */
   idealFor?: string;
 };
 
@@ -22,7 +22,7 @@ export const services: ServiceItem[] = [
       "Restaurá el equilibrio energético de tu cuerpo a través de técnicas milenarias que promueven el bienestar físico y emocional.",
     benefits: [],
     idealFor:
-      "ideal para: alivio del dolor, trastornos digestivos, lumbalgias, cefaleas, bruxismo, estrés, ansiedad, insomnio, y mucho más.",
+      "Ideal para: alivio del dolor, trastornos digestivos, lumbalgias, cefaleas, bruxismo, estrés, ansiedad, insomnio, y mucho más.",
   },
   {
     slug: "compassionate-inquiry",
