@@ -8,6 +8,9 @@ function consultarWhatsAppText(slug: string, title: string): string {
   if (slug === "medicina-tradicional-china") {
     return "Hola! Quiero averiguar por sesiones de Medicina china.";
   }
+  if (slug === "compassionate-inquiry") {
+    return "Hola! Quiero averiguar por sesiones de Compassionate Inquiry.";
+  }
   return `Hola! Quiero consultar por ${title}.`;
 }
 
