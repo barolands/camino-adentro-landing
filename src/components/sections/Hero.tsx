@@ -1,6 +1,10 @@
 import Logo from "../Logo";
 import { Button } from "../ui/button";
 
+const WA_RESERVAR_HREF = `https://wa.me/5491168344165?text=${encodeURIComponent(
+  "Hola! Quiero reservar una sesión."
+)}`;
+
 const Hero = () => (
   <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden section-padding text-center">
     {/* Subtle background gradient */}
@@ -23,7 +27,7 @@ const Hero = () => (
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
         <Button variant="hero" size="lg" asChild>
-          <a href="https://wa.me/5491168344165?text=Hola!%20Quiero%20reservar%20una%20sesión" target="_blank" rel="noopener noreferrer">
+          <a href={WA_RESERVAR_HREF} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

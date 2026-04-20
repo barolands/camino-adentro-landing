@@ -64,7 +64,9 @@ const Services = () => {
                 )}
                 <Button variant="outline" className="rounded-full" size="sm" asChild>
                   <a
-                    href="https://wa.me/5491168344165?text=Hola!%20Quiero%20consultar%20por%20"
+                    href={`https://wa.me/5491168344165?text=${encodeURIComponent(
+                      `Hola! Quiero consultar por ${s.title}.`
+                    )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
