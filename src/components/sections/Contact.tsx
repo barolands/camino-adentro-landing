@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import { MapPin, Wifi, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
+const CONTACT_EMAIL = "daniela@caminoadentro.com";
+
 const Contact = () => {
   const ref = useFadeIn();
   const [name, setName] = useState("");
@@ -10,8 +12,11 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hola! Soy ${name}. ${message}`;
-    window.open(`https://wa.me/5491168344165?text=${encodeURIComponent(text)}`, "_blank");
+    const body = `Hola Daniela,\n\nSoy ${name}.\n\n${message}`;
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      `Contacto web — ${name}`
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.assign(mailto);
   };
 
   return (

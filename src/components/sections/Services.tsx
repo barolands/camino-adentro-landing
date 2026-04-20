@@ -14,6 +14,9 @@ function consultarWhatsAppText(slug: string, title: string): string {
   if (slug === "terapia-floral-bach") {
     return "Hola! Quiero averiguar por sesiones de Flores de Bach.";
   }
+  if (slug === "masajes-terapeuticos") {
+    return "Hola! Quiero averiguar por sesiones de masajes.";
+  }
   return `Hola! Quiero consultar por ${title}.`;
 }
 
