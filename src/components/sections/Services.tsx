@@ -11,6 +11,9 @@ function consultarWhatsAppText(slug: string, title: string): string {
   if (slug === "compassionate-inquiry") {
     return "Hola! Quiero averiguar por sesiones de Compassionate Inquiry.";
   }
+  if (slug === "terapia-floral-bach") {
+    return "Hola! Quiero averiguar por sesiones de Flores de Bach.";
+  }
   return `Hola! Quiero consultar por ${title}.`;
 }
 
