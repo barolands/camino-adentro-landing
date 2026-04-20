@@ -4,6 +4,13 @@ import { getServiceLandingUrl, services } from "@/data/services";
 
 const SLUGS_WITH_VER_MAS = new Set(["medicina-tradicional-china", "compassionate-inquiry"]);
 
+function consultarWhatsAppText(slug: string, title: string): string {
+  if (slug === "medicina-tradicional-china") {
+    return "Hola! Quiero averiguar por sesiones de Medicina china.";
+  }
+  return `Hola! Quiero consultar por ${title}.`;
+}
+
 const Services = () => {
   const ref = useFadeIn();
 
@@ -65,7 +72,7 @@ const Services = () => {
                 <Button variant="outline" className="rounded-full" size="sm" asChild>
                   <a
                     href={`https://wa.me/5491168344165?text=${encodeURIComponent(
-                      `Hola! Quiero consultar por ${s.title}.`
+                      consultarWhatsAppText(s.slug, s.title)
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
