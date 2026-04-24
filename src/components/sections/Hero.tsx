@@ -1,3 +1,4 @@
+import { Globe, TreePine } from "lucide-react";
 import Logo from "../Logo";
 import { Button } from "../ui/button";
 
@@ -23,6 +24,36 @@ const Hero = () => (
 
       <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.45s" }}>
         Terapias integrales para volver a tu centro
+      </p>
+
+      <p
+        className="text-sm md:text-base font-body text-muted-foreground max-w-md leading-relaxed animate-fade-in flex flex-col items-center gap-1.5"
+        style={{ animationDelay: "0.52s" }}
+      >
+        <span className="inline-flex flex-wrap items-center justify-center gap-x-1">
+          <span>Atención presencial: </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="whitespace-nowrap">Unquillo</span>
+            <TreePine
+              className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-primary/70"
+              strokeWidth={1.5}
+              aria-hidden
+            />
+          </span>
+          <span>, Córdoba</span>
+        </span>
+        <span className="inline-flex flex-wrap items-center justify-center gap-x-1">
+          <span>Atención online: </span>
+          <span>para el </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="whitespace-nowrap">mundo</span>
+            <Globe
+              className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-primary/70"
+              strokeWidth={1.5}
+              aria-hidden
+            />
+          </span>
+        </span>
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
