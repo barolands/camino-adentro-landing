@@ -17,12 +17,12 @@ const Hero = () => (
         Camino Adentro
       </h1>
 
-      <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
-        Terapias integrales para volver a tu centro
+      <p className="text-base md:text-lg font-body font-light text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        Medicina tradicional china- Masajes terapéuticos- Terapia floral- Acompañamiento psico-emocional con Compassionate Inquiry
       </p>
 
-      <p className="text-base md:text-lg font-body font-light text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.45s" }}>
-        Medicina tradicional china- Masajes terapéuticos- Terapia floral- Acompañamiento psico-emocional con Compassionate Inquiry
+      <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.45s" }}>
+        Terapias integrales para volver a tu centro
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
