@@ -15,7 +15,7 @@ const Footer = () => (
           </div>
         </div>
         <p className="font-body text-xs text-primary-foreground/40">
-          © {new Date().getFullYear()} Camino Adentro · Córdoba, Argentina
+          © {new Date().getFullYear()} Camino Adentro · Unquillo, Córdoba
         </p>
       </div>
 
