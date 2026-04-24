@@ -17,7 +17,7 @@ export const services: ServiceItem[] = [
     slug: "medicina-tradicional-china",
     icon: Flower2,
     title: "Medicina Tradicional China",
-    mode: "Presencial",
+    mode: "Presencial: Unquillo, Córdoba",
     description:
       "Restaurá el equilibrio energético de tu cuerpo a través de técnicas milenarias que promueven el bienestar físico y emocional.",
     benefits: [],
@@ -50,7 +50,7 @@ export const services: ServiceItem[] = [
     slug: "masajes-terapeuticos",
     icon: Hand,
     title: "Masajes Terapéuticos",
-    mode: "Presencial",
+    mode: "Presencial: Unquillo, Córdoba",
     description:
       "Relajación profunda, alivio de tensiones y una invitación a reconectar con tu cuerpo desde la calma y la presencia.",
     benefits: [],
