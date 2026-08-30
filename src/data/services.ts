@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Flower2, Heart, Droplets, Hand } from "lucide-react";
+import { Flower2, Heart, Droplets } from "lucide-react";
 
 export type ServiceItem = {
   slug: string;
@@ -45,17 +45,6 @@ export const services: ServiceItem[] = [
     benefits: [],
     idealFor:
       "Ideal para: ansiedad, estrés, tristeza profunda, desánimo, falta de iniciativa, miedos, falta de confianza personal, shock, sobrepensamiento, adaptación a cambios, y más.",
-  },
-  {
-    slug: "masajes-terapeuticos",
-    icon: Hand,
-    title: "Masajes Terapéuticos",
-    mode: "Presencial: Unquillo, Córdoba",
-    description:
-      "Relajación profunda, alivio de tensiones y una invitación a reconectar con tu cuerpo desde la calma y la presencia.",
-    benefits: [],
-    idealFor:
-      "Ideal para: contracturas, estrés acumulado, agotamiento físico y mental, necesidad de conectar con el cuerpo y la relajación.",
   },
 ];
 

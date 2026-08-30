@@ -8,11 +8,6 @@ const testimonials = [
     detail: "Compassionate Inquiry",
   },
   {
-    text: "Los masajes me ayudaron a reconectar con mi cuerpo después de mucho tiempo de estrés. Salgo renovada cada vez.",
-    name: "Carolina S.",
-    detail: "Masajes terapéuticos",
-  },
-  {
     text: "Las flores de Bach me acompañaron en un momento de mucho cambio. Sentí un sostén increíble durante todo el proceso.",
     name: "Martín R.",
     detail: "Terapia Floral Bach",

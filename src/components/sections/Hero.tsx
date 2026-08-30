@@ -19,7 +19,7 @@ const Hero = () => (
       </h1>
 
       <p className="text-base md:text-lg font-body font-light text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.3s" }}>
-        Medicina tradicional china- Masajes terapéuticos- Terapia floral- Acompañamiento psico-emocional con Compassionate Inquiry
+        Medicina tradicional china- Terapia floral- Acompañamiento psico-emocional con Compassionate Inquiry
       </p>
 
       <p className="text-xl md:text-2xl font-heading font-light italic text-muted-foreground animate-fade-in" style={{ animationDelay: "0.45s" }}>
