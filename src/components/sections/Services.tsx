@@ -31,14 +31,17 @@ const Services = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {services.map((s) => {
+          {services.map((s, i) => {
             const verMasHref = getServiceLandingUrl(s.slug);
             const verMasIsExternal = /^https?:\/\//i.test(verMasHref);
+            const isLastOdd = i === services.length - 1 && services.length % 2 !== 0;
 
             return (
             <div
               key={s.slug}
-              className="group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/20"
+              className={`group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/20 ${
+                isLastOdd ? "md:col-span-2 md:mx-auto md:w-[calc(50%-1rem)]" : ""
+              }`}
             >
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-light text-primary">

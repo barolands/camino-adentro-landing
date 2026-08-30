@@ -12,6 +12,11 @@ const testimonials = [
     name: "Martín R.",
     detail: "Terapia Floral Bach",
   },
+  {
+    text: "Llegué con dolores crónicos y mucho estrés acumulado. Las sesiones de acupuntura y medicina china me devolvieron el equilibrio que había perdido.",
+    name: "Carolina P.",
+    detail: "Medicina China",
+  },
 ];
 
 const Testimonials = () => {
